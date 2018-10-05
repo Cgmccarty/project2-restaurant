@@ -50,8 +50,10 @@ header {
 
   .row {
 
+    display: flex;
     padding: 0;
     margin: 0;
+    justify-content: center;
 
     .card-header {
       background-color: black;

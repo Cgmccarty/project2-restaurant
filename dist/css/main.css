@@ -8653,8 +8653,10 @@ a {
 }
 
 header .row {
+  display: flex;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 header .row .card-header {
   background-color: black;
