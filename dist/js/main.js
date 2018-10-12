@@ -9,7 +9,7 @@ document.onreadystatechange = function () {
 };
 
 function getMenu() {
-  let url = 'https://entree-f18.herokuapp.com/v1/menu';
+  let url = 'https://entree-f18.herokuapp.com/v1/menu/12';
   apiRequest.onload = onSuccess; // apiRequest.onerror = onError;
 
   apiRequest.open('get', url, true);

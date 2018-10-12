@@ -1,3 +1,5 @@
+// Import bootstrap
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 $persimmon: #ff634d;
@@ -10,16 +12,34 @@ html, body {
   color: white;
 
   body {
-    margin: 50px;
+    margin: 20px;
   }
 }
 
-h1, h3, h6 {
+h1, h2, h4 {
   color: $mint;
-  text-align: center;
+  text-align: left;
   font-family: 'Kaushan Script', cursive;
   text-shadow:  -2px 0 $persimmon, 0 2px $persimmon, 2px 0 $persimmon, 0 -2px $persimmon;
   letter-spacing: 3px;
+
+  h3 {
+    margin-left: 40px;
+  }
+
+  h4 {
+    text-align: left;
+  }
+
+}
+
+h2 {
+  margin-left: 42px;
+}
+
+h1{
+  font-size: 80px;
+  margin-left: 42px;
 }
 
 a {
@@ -28,15 +48,12 @@ a {
   text-decoration: underline;
 }
 
-.menu {
-    margin: 0 auto;
-}
-
 .card {
   background-color: $persimmon;
-  width: 200px;
-  height: 250px;
+  width: 550px;
+  height: 180px;
   text-overflow: ellipsis;
+  padding: 10px;
   margin: auto;
   border-bottom-right-radius: 18%;
   border-top-left-radius: 18%;
@@ -44,16 +61,30 @@ a {
   overflow: auto;
   text-align: left;
   box-sizing: border-box;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+}
+
+.menu {
+  margin: 50px;
+}
+
+.introduction {
+  margin: 30px;
+  margin-right: 30px;
+}
+
+.hours {
+  float: right;
+  padding-left: 260px !important;
 }
 
 header {
 
   .row {
 
-    display: flex;
     padding: 0;
     margin: 0;
-    justify-content: center;
 
     .card-header {
       background-color: black;
@@ -67,10 +98,8 @@ header {
 .card-body {
   background-color: black;
   font-family: cursive;
-}
-
-span {
-  text-decoration: underline;
+  border-top-left-radius: 18%;
+  border-bottom-right-radius: 23%;
 }
 
 p {
